@@ -1,4 +1,6 @@
 aqrun.com
 =========
 
-drupal based aqrun.com sites file
+* 个人博客[阿Q快跑网](http://aqrun.com)
+* drupal CMS
+
