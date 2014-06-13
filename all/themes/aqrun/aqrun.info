@@ -85,6 +85,8 @@ stylesheets[all][] = css/styles.css
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
+regions[top_search]         = 顶部搜索
+
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

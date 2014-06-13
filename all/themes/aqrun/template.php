@@ -1,5 +1,6 @@
 <?php
 /**
+ * http://www.zh30.com/
  * @file
  * Contains the theme's functions to manipulate Drupal's default markup.
  *
@@ -52,11 +53,16 @@ function aqrun_preprocess_html(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function aqrun_preprocess_page(&$variables, $hook) {
+  $theme = drupal_get_path('theme','aqrun');
   $variables['sample_variable'] = t('Lorem ipsum.');
+  //var_dump(get_defined_vars());
+  //向blog页面添加css样式
+  if(current_path() == "blog"){
+    drupal_add_css($theme . "/css/blog.css");
+  }
 }
-// */
+
 
 /**
  * Override or insert variables into the node templates.
