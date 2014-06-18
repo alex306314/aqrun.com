@@ -28,4 +28,5 @@ install.php
 update.php
 xmlrpc.php
 robots.txt
+sites/default/settings.php
 

@@ -216,6 +216,7 @@ $databases = array (
     'default' => 
     array (
       'database' => 'db_aqrun',
+      //'database' => 'aqrun',
       'username' => 'root',
       'password' => '',
       'host' => 'localhost',
