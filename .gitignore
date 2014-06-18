@@ -1,17 +1,12 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
-
 # Ignore paths that contain generated content.
-cache/
-files/
-sites/*/files
-sites/*/private
-includes/
-misc/
-modules/
-profiles/
-scripts/
-themes/
+/cache
+/files
+/includes
+/misc
+/modules
+/profiles
+/scripts
+/themes
 /CHANGELOG.txt
 /COPYRIGHT.txt
 /INSTALL*.txt
@@ -20,13 +15,13 @@ themes/
 /UPGRADE.txt
 /README.txt
 .htaccess
-web.config
-authorize.php
-cron.php
-index.php
-install.php
-update.php
-xmlrpc.php
-robots.txt
-sites/default/settings.php
+/web.config
+/authorize.php
+/cron.php
+/index.php
+/install.php
+/update.php
+/xmlrpc.php
+/robots.txt
+/sites/default/settings.php
 
