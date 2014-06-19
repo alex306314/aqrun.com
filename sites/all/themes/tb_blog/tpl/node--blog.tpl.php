@@ -111,12 +111,14 @@
     <?php
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_tags']);
       print render($content);
     ?>
   </div>
-
   <?php if ($links = render($content['links'])): ?>
-    <div class="menu node-links clearfix"><?php print $links; ?></div>
+    <div class="menu node-links clearfix"><?php print $links; ?>
+
+    </div>
   <?php endif; ?>
 
   <?php print render($content['comments']); ?>

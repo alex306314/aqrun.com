@@ -3,7 +3,6 @@
  * @file
  * Override of theme_preprocess_...
  */
-
 /**
  * Override or insert variables into the node template.
  *
@@ -28,5 +27,24 @@ function tb_blog_preprocess_node(&$vars) {
     );
     $vars['blog_created_day'] = date('j', $vars['created']);
     $vars['blog_created_month'] =$month[date('n', $vars['created'])];
-  }
+    //添加博客分类
+    $blog_type = $vars['content']['field_tags'][0]['#title'];
+    $blog_type_href = $vars['content']['field_tags'][0]['#href'];
+    $vars['content']['links'][] = array(
+      "#links" => array(
+        'blog_type' => array(
+          'title' => "分类：" . $blog_type,
+          'href' => $blog_type_href,
+          'attributes' => array(
+            'title' => "博客分类"
+          ),
+        ),
+      ),
+    );
+//    echo "<pre>";
+//    //print_r($vars['content']['field_tags']);
+//    echo "<br>======================================<br>";
+//    var_dump($vars['content']['links']['blog']);
+//    echo "</pre>";
+}
 }
